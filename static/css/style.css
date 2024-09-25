@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #e0f7fa;
+    color: #333;
+}
+
+.bg-dark-green {
+    background-image: url(/static/img/cloud3.png); 
+}
+
+
+.bg-light{
+   background-image: url(/static/img/cloud2.png);
+}
+
+.logo {
+    font-size: 3em;
+    color: #2a2b2a; /* Glowing green text */
+    /* background-image: url(/assets/sea_lvl.png); */
+    text-decoration: none;
+}
+
+.emoji {
+    font-size: 1.2em;
+}
+
+.highlight {
+    color: #009688; /* Matching the green theme */
+    font-weight: bold;
+}
+
+#weather{
+    background-image: url(/static/img/tree1.png) !important;
+    color: #030303;
+    font-weight: bolder;
+    /* width: 100%; */
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+}
+
+#weather:hover{
+    /* background-image: url(/assets/jap_cloud.png); */
+    /* background-image: url(/assets/reshot-icon-weather-VAUPX2QFJK.svg); */
+    /* background-attachment: fixed; */
+    background-image: url(/static/img/tree1.png );
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: #000000;
+    font-weight: bolder ;
+    transition-duration: 5s;
+}
+
+.intro{
+    font-family: monospace;
+    font-weight: 900;
+}
+
+.flash {
+    font-size: 3em;
+    color: #000000;
+    text-decoration: none;
+    -webkit-animation: flash linear 1s infinite;
+    animation: flash linear 1s infinite;
+}
+
+@-webkit-keyframes flash {
+    0% { opacity: 1; } 
+    50% { opacity: .1; } 
+    100% { opacity: 1; }
+}
+@keyframes flash {
+    0% { opacity: 1; } 
+    50% { opacity: .1; } 
+    100% { opacity: 1; }
+}
+
+.pulseit {
+    -webkit-animation: pulse linear .5s infinite;
+    animation: pulse linear .5s infinite;
+}
+
+@-webkit-keyframes pulse {
+    0% { width:200px; } 
+    50% { width:340px; } 
+    100% { width:200px; }
+}
+@keyframes pulse {
+    0% { width:200px; } 
+    50% { width:340px; } 
+    100% { width:200px; }
+}
+
+
+/* fonts */
+
+@font-face {
+    font-family: montserrat;
+    src: url(/fonts/montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: bionical;
+    src: url(/fonts/BionicalDemo-8MJ5A.ttf);
+}
+
+@font-face {
+    font-family: lines;
+    src: url(/fonts/Exwayer-X3eqa.ttf);
+}
+
+@font-face {
+    font-family: glitch;
+    src: url(/fonts/GlitchGoblin-2O87v.ttf);
+}
+
+@font-face {
+    font-family: android;
+    src: url(/static/fonts/Android.ttf);
+}
