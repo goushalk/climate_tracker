@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cli_tracker.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand text-light" href="#">Climate Tracker</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto ">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dataset
+                    </a>
+                    <!-- <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul> -->
+                  </li> 
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Weather-Info
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="{{ url_for('temprature' ) }}">Temprature</a></li>
+                      <li><a class="dropdown-item" href="{{ url_for('wind' ) }}">Windspeed</a></li>
+                      <li><a class="dropdown-item" href="{{ url_for('rain_snow' ) }}">Rain&Snow</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Back-to-Top Button -->
+    <button id="back-to-top" title="Back to Top" class="btn btn-primary position-fixed bottom-0 end-0 m-3">top</button>
+
+    <!-- Parallax Section 1 -->
+    <section class="parallax parallax1" id="home">
+        <div class="container text-center text-white">
+            <h1>Welcome to Climate Tracker</h1>
+            <p>Tracking Climate Change Across the Earth</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section py-5">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <p class="text-center">Our mission is to provide accurate climate data with an out-of-this-world experience.</p>
+        </div>
+    </section>
+
+    <!-- Parallax Section 2 -->
+    <section class="parallax parallax2">
+        <div class="container text-center text-white">
+            <h2>Global Warming Effects</h2>
+        </div>
+    </section>
+
+    <!-- Data Section -->
+    <section id="data" class="section py-5">
+        <div class="container">
+            <h2 class="text-center">Climate Data</h2>
+            <p class="text-center">Access the latest climate change data and trends.</p>
+        </div>
+    </section>
+
+    <!-- Parallax Section 3 -->
+    <section class="parallax parallax3">
+        <div class="container text-center text-white">
+            <h2>Join the Mission</h2>
+            <p>Help us protect our planet!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- <section id="contact" class="section py-5">
+        <div class="container">
+            <h2 class="text-center">Sea Level</h2>
+            <p class="text-center"></p>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3" style="width: 100%;">
+        <p>&copy; 2024 Climate Tracker. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
